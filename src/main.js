@@ -16,7 +16,8 @@ Vue.use(MdApp)
 Vue.use(VueMaterial)
 
 Vue.config.productionTip = false
-
+window.Vue = Vue;
 new Vue({
   render: h => h(App),
 }).$mount('#app')
+
