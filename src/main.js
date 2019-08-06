@@ -7,6 +7,15 @@ import { MdButton, MdContent, MdTabs,MdApp } from 'vue-material/dist/components'
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default.css'
+import { library,dom } from '@fortawesome/fontawesome-svg-core'
+import { faCircle,faShoppingCart,faLaptop,faLock } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faCircle,faShoppingCart,faLaptop,faLock)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+dom.watch() 
+
 
 Vue.use(MdButton)
 Vue.use(MdContent)

@@ -2,15 +2,18 @@
   <div id="app">
    <!-- Navigation Bar -->
    <NavBar></NavBar>
+   <HelloWorld></HelloWorld>
   </div>
 </template>
 
 <script>
+import HelloWorld from './components/HelloWorld.vue'
 import NavBar from './components/NavBar.vue'
 export default {
   name: 'app',
   components: {
-    NavBar
+    NavBar,
+    HelloWorld
   }
 }
 </script>

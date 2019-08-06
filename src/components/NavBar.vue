@@ -30,10 +30,8 @@
     </div>
 </template>
 
-
-
 <script>
-const OFFSET = 60;
+const OFFSET = 30;
 export default {
   data() {
     return {
@@ -41,7 +39,6 @@ export default {
       lastScrollPosition: 0
     };
   },
-
   mounted() {
     this.lastScrollPosition = window.pageYOffset;
     window.addEventListener("scroll", this.onScroll);
@@ -63,22 +60,24 @@ export default {
       if (Math.abs(window.pageYOffset - this.lastScrollPosition) < OFFSET) {
         return;
       }
-      this.showNavbar = window.pageYOffset < this.lastScrollPosition;
+      this.showNavbar = window.pageYOffset < 30;
       this.lastScrollPosition = window.pageYOffset;
     }
   }
 };
 </script>
+
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 .nav-div{
-  padding-top:20px;
+//   padding-top:20px;
   width: 100%;
   height:49vw;
   background:url('~@/assets/img/header-bg.jpg');
   background-size:cover;
   background-position: 0 -120px; 
+  margin-bottom:7%;
 }
 .navbar {
   width:100%;
