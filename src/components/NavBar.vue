@@ -91,6 +91,7 @@ export default {
  background-color:  black;
  box-shadow: none;
  transform: translate3d(0, -100%, 80%);
+ 
 }
 #brand {
   text-decoration: none;

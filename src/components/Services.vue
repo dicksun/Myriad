@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="services">
     <!-- Services -->
     <section class="page-section" id="services">
       <div class="container">
@@ -49,7 +49,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "Services",
   props: {
     msg: String
   }
@@ -60,7 +60,7 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
-.hello{
+.services{
   margin:7%;
 }
 h2 {
